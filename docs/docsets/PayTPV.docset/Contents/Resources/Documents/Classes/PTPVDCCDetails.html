@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>PTPVDCCDetails Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/objc/Class/PTPVDCCDetails" class="dashAnchor"></a>
+    <a title="PTPVDCCDetails Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">PAYTPV Docs</a> (100% documented)</p>
+        <p class="header-right"><a href="https://github.com/PayTpv/IOS-SDK"><img src="../img/gh.png"/>View on GitHub</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">PAYTPV Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        PTPVDCCDetails Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/PTPVAPIClient.html">PTPVAPIClient</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PTPVCard.html">PTPVCard</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PTPVConfiguration.html">PTPVConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PTPVDCCConfirmation.html">PTPVDCCConfirmation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PTPVDCCDetails.html">PTPVDCCDetails</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PTPVPreauthorization.html">PTPVPreauthorization</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PTPVPurchase.html">PTPVPurchase</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PTPVPurchaseRequest.html">PTPVPurchaseRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PTPVRefund.html">PTPVRefund</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PTPVResponse.html">PTPVResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PTPVSubscription.html">PTPVSubscription</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PTPVSubscriptionDetails.html">PTPVSubscriptionDetails</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PTPVUser.html">PTPVUser</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enums</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/PTPVResult.html">PTPVResult</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/PTPVAPIResponseDecodable.html">PTPVAPIResponseDecodable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/PTPVNSDictionaryEncodable.html">PTPVNSDictionaryEncodable</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Type Definitions.html">Type Definitions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Type Definitions.html#/c:PTPVBlocks.h@T@PTPVAddUserCompletionBlock">PTPVAddUserCompletionBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type Definitions.html#/c:PTPVBlocks.h@T@PTPVAddUserTokenCompletionBlock">PTPVAddUserTokenCompletionBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type Definitions.html#/c:PTPVBlocks.h@T@PTPVCancelPreauthorizationCompletionBlock">PTPVCancelPreauthorizationCompletionBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type Definitions.html#/c:PTPVBlocks.h@T@PTPVConfirmPreauthorizationCompletionBlock">PTPVConfirmPreauthorizationCompletionBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type Definitions.html#/c:PTPVBlocks.h@T@PTPVConfirmPurchaseDCCCompletionBlock">PTPVConfirmPurchaseDCCCompletionBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type Definitions.html#/c:PTPVBlocks.h@T@PTPVCreatePreauthorizationCompletionBlock">PTPVCreatePreauthorizationCompletionBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type Definitions.html#/c:PTPVBlocks.h@T@PTPVCreateSubscriptionCompletionBlock">PTPVCreateSubscriptionCompletionBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type Definitions.html#/c:PTPVBlocks.h@T@PTPVCreateSubscriptionTokenCompletionBlock">PTPVCreateSubscriptionTokenCompletionBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type Definitions.html#/c:PTPVCurrency.h@T@PTPVCurrency">PTPVCurrency</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type Definitions.html#/c:PTPVBlocks.h@T@PTPVEditSubscriptionCompletionBlock">PTPVEditSubscriptionCompletionBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type Definitions.html#/c:PTPVBlocks.h@T@PTPVErrorBlock">PTPVErrorBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type Definitions.html#/c:PTPVBlocks.h@T@PTPVExecutePurchaseCompletionBlock">PTPVExecutePurchaseCompletionBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type Definitions.html#/c:PTPVBlocks.h@T@PTPVExecutePurchaseDCCCompletionBlock">PTPVExecutePurchaseDCCCompletionBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type Definitions.html#/c:PTPVBlocks.h@T@PTPVExecuteRefundCompletionBlock">PTPVExecuteRefundCompletionBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type Definitions.html#/c:PTPVBlocks.h@T@PTPVInfoUserCompletionBlock">PTPVInfoUserCompletionBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type Definitions.html#/c:PTPVBlocks.h@T@PTPVRemoveSubscriptionCompletionBlock">PTPVRemoveSubscriptionCompletionBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type Definitions.html#/c:PTPVBlocks.h@T@PTPVRemoveUserCompletionBlock">PTPVRemoveUserCompletionBlock</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>PTPVDCCDetails</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="k">@interface</span> <span class="nc">PTPVDCCDetails</span> <span class="p">:</span> <span class="nc">NSObject</span> <span class="o">&lt;</span><span class="n"><a href="../Protocols/PTPVAPIResponseDecodable.html">PTPVAPIResponseDecodable</a></span><span class="o">&gt;</span></code></pre>
+
+                </div>
+              </div>
+            <p>Represents the DCC purchase details</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PTPVDCCDetails(py)amount"></a>
+                    <a name="//apple_ref/objc/Property/amount" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PTPVDCCDetails(py)amount">amount</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Amount of the operation in integer format. 1.00 EURO = 100, 4.50 EUROS = 450&hellip;</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">copy</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">,</span> <span class="n">nullable</span><span class="p">)</span> <span class="n">NSNumber</span> <span class="o">*</span><span class="n">amount</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">@NSCopying</span> <span class="k">var</span> <span class="nv">amount</span><span class="p">:</span> <span class="kt">NSNumber</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PTPVDCCDetails(py)order"></a>
+                    <a name="//apple_ref/objc/Property/order" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PTPVDCCDetails(py)order">order</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Reference of the operation.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">copy</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">,</span> <span class="n">nullable</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">order</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">order</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PTPVDCCDetails(py)currency"></a>
+                    <a name="//apple_ref/objc/Property/currency" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PTPVDCCDetails(py)currency">currency</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Transaction currency. It will always be the same as the original product.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">copy</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">,</span> <span class="n">nullable</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">currency</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">currency</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PTPVDCCDetails(py)dccSession"></a>
+                    <a name="//apple_ref/objc/Property/dccSession" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PTPVDCCDetails(py)dccSession">dccSession</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Session var for later confirmation of the authorization. This value must be stored to confirm payment in the currency chosen by the end user.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">copy</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">,</span> <span class="n">nullable</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">dccSession</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">dccSession</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PTPVDCCDetails(py)dccCurrency"></a>
+                    <a name="//apple_ref/objc/Property/dccCurrency" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PTPVDCCDetails(py)dccCurrency">dccCurrency</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Native currency of the customer&rsquo;s card.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">copy</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">,</span> <span class="n">nullable</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">dccCurrency</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">dccCurrency</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PTPVDCCDetails(py)dccCurrencyISO3"></a>
+                    <a name="//apple_ref/objc/Property/dccCurrencyISO3" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PTPVDCCDetails(py)dccCurrencyISO3">dccCurrencyISO3</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Native currency of the customer&rsquo;s card in ISO3</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">copy</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">,</span> <span class="n">nullable</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">dccCurrencyISO3</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">dccCurrencyISO3</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PTPVDCCDetails(py)dccCurrencyName"></a>
+                    <a name="//apple_ref/objc/Property/dccCurrencyName" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PTPVDCCDetails(py)dccCurrencyName">dccCurrencyName</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Literal currency in string. If the native currency is the same as the product PAYTPV, this field will come with value 0.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">copy</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">,</span> <span class="n">nullable</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">dccCurrencyName</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">dccCurrencyName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PTPVDCCDetails(py)dccExchange"></a>
+                    <a name="//apple_ref/objc/Property/dccExchange" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PTPVDCCDetails(py)dccExchange">dccExchange</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Currency exchange rate. Return string but it will come in float format.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">copy</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">,</span> <span class="n">nullable</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">dccExchange</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">dccExchange</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PTPVDCCDetails(py)dccAmount"></a>
+                    <a name="//apple_ref/objc/Property/dccAmount" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PTPVDCCDetails(py)dccAmount">dccAmount</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Amount of the operation in whole format. 1,00 EURO = 100, 4,50 EUROS = 450&hellip;</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">copy</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">,</span> <span class="n">nullable</span><span class="p">)</span> <span class="n">NSNumber</span> <span class="o">*</span><span class="n">dccAmount</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">@NSCopying</span> <span class="k">var</span> <span class="nv">dccAmount</span><span class="p">:</span> <span class="kt">NSNumber</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PTPVDCCDetails(py)dccMarkup"></a>
+                    <a name="//apple_ref/objc/Property/dccMarkup" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PTPVDCCDetails(py)dccMarkup">dccMarkup</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Percentage value in float of DCC margin applied by the financial institution. For example: 0.03 will be 3%</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">copy</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">,</span> <span class="n">nullable</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">dccMarkup</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">dccMarkup</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PTPVDCCDetails(py)dccCardCountry"></a>
+                    <a name="//apple_ref/objc/Property/dccCardCountry" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PTPVDCCDetails(py)dccCardCountry">dccCardCountry</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Country of the issuer of the card in ISO3 Code (ex.: 724 = Spain).</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">copy</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">,</span> <span class="n">nullable</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">dccCardCountry</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">dccCardCountry</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PTPVDCCDetails(py)result"></a>
+                    <a name="//apple_ref/objc/Property/result" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PTPVDCCDetails(py)result">result</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Result of operation. 0 or empty will be erroneous operation and 1 operation completed.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@property</span> <span class="p">(</span><span class="n">assign</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n"><a href="../Enums/PTPVResult.html">PTPVResult</a></span> <span class="n">result</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">result</span><span class="p">:</span> <span class="kt"><a href="../Enums/PTPVResult.html">PTPVResult</a></span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2017 <a class="link" href="https://www.paytpv.com/" target="_blank" rel="external">PAYTPV</a>. All rights reserved. (Last updated: 2017-10-09)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.8.3</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

@@ -1,0 +1,400 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1E6825E41F4C36CF00C45570 /* PurchasesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E6825E31F4C36CF00C45570 /* PurchasesViewController.m */; };
+		1E845BFF1F4AD7BD00E77DDF /* CardsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E845BFE1F4AD7BD00E77DDF /* CardsTableViewController.m */; };
+		1E845C021F4AE08E00E77DDF /* AlertBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E845C011F4AE08E00E77DDF /* AlertBuilder.m */; };
+		1E845C061F4AE91000E77DDF /* AddCardController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E845C041F4AE91000E77DDF /* AddCardController.m */; };
+		1E845C071F4AE91000E77DDF /* AddCardController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E845C051F4AE91000E77DDF /* AddCardController.xib */; };
+		1EDBEB1D1F47344400EEEBEE /* ProductsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EDBEB1C1F47344400EEEBEE /* ProductsTableViewController.m */; };
+		1EDBEB201F4734EC00EEEBEE /* Models.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EDBEB1F1F4734EC00EEEBEE /* Models.m */; };
+		1EDBEB231F4739EF00EEEBEE /* ModelStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EDBEB221F4739EF00EEEBEE /* ModelStore.m */; };
+		1EE099181F41BA0E003FFB9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EE099171F41BA0E003FFB9A /* main.m */; };
+		1EE0991B1F41BA0E003FFB9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EE0991A1F41BA0E003FFB9A /* AppDelegate.m */; };
+		1EE099231F41BA0E003FFB9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1EE099221F41BA0E003FFB9A /* Assets.xcassets */; };
+		1EE099261F41BA0E003FFB9A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EE099241F41BA0E003FFB9A /* LaunchScreen.storyboard */; };
+		1EE0994C1F41BA77003FFB9A /* PayTPV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EE0994B1F41BA77003FFB9A /* PayTPV.framework */; };
+		1EE0994D1F41BA77003FFB9A /* PayTPV.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1EE0994B1F41BA77003FFB9A /* PayTPV.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1EE0994E1F41BA77003FFB9A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1EE0994D1F41BA77003FFB9A /* PayTPV.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1E6825E21F4C36CF00C45570 /* PurchasesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PurchasesViewController.h; sourceTree = "<group>"; };
+		1E6825E31F4C36CF00C45570 /* PurchasesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PurchasesViewController.m; sourceTree = "<group>"; };
+		1E845BFD1F4AD7BD00E77DDF /* CardsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardsTableViewController.h; sourceTree = "<group>"; };
+		1E845BFE1F4AD7BD00E77DDF /* CardsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardsTableViewController.m; sourceTree = "<group>"; };
+		1E845C001F4AE08E00E77DDF /* AlertBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertBuilder.h; sourceTree = "<group>"; };
+		1E845C011F4AE08E00E77DDF /* AlertBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertBuilder.m; sourceTree = "<group>"; };
+		1E845C031F4AE91000E77DDF /* AddCardController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddCardController.h; sourceTree = "<group>"; };
+		1E845C041F4AE91000E77DDF /* AddCardController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddCardController.m; sourceTree = "<group>"; };
+		1E845C051F4AE91000E77DDF /* AddCardController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddCardController.xib; sourceTree = "<group>"; };
+		1EDBEB1B1F47344400EEEBEE /* ProductsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductsTableViewController.h; sourceTree = "<group>"; };
+		1EDBEB1C1F47344400EEEBEE /* ProductsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductsTableViewController.m; sourceTree = "<group>"; };
+		1EDBEB1E1F4734EC00EEEBEE /* Models.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Models.h; sourceTree = "<group>"; };
+		1EDBEB1F1F4734EC00EEEBEE /* Models.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Models.m; sourceTree = "<group>"; };
+		1EDBEB211F4739EF00EEEBEE /* ModelStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelStore.h; sourceTree = "<group>"; };
+		1EDBEB221F4739EF00EEEBEE /* ModelStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelStore.m; sourceTree = "<group>"; };
+		1EE099131F41BA0E003FFB9A /* PayTPV Objc Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PayTPV Objc Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1EE099171F41BA0E003FFB9A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1EE099191F41BA0E003FFB9A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1EE0991A1F41BA0E003FFB9A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1EE099221F41BA0E003FFB9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1EE099251F41BA0E003FFB9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1EE099271F41BA0E003FFB9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1EE0994B1F41BA77003FFB9A /* PayTPV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PayTPV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1EE099101F41BA0E003FFB9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EE0994C1F41BA77003FFB9A /* PayTPV.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1EDBEB181F4732F300EEEBEE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1EE099221F41BA0E003FFB9A /* Assets.xcassets */,
+				1EE099241F41BA0E003FFB9A /* LaunchScreen.storyboard */,
+				1EE099271F41BA0E003FFB9A /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		1EDBEB191F47331700EEEBEE /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				1EE099191F41BA0E003FFB9A /* AppDelegate.h */,
+				1EE0991A1F41BA0E003FFB9A /* AppDelegate.m */,
+				1EDBEB1A1F47331B00EEEBEE /* Helpers */,
+				1EDBEB1B1F47344400EEEBEE /* ProductsTableViewController.h */,
+				1EDBEB1C1F47344400EEEBEE /* ProductsTableViewController.m */,
+				1E845BFD1F4AD7BD00E77DDF /* CardsTableViewController.h */,
+				1E845BFE1F4AD7BD00E77DDF /* CardsTableViewController.m */,
+				1E845C031F4AE91000E77DDF /* AddCardController.h */,
+				1E845C041F4AE91000E77DDF /* AddCardController.m */,
+				1E845C051F4AE91000E77DDF /* AddCardController.xib */,
+				1E6825E21F4C36CF00C45570 /* PurchasesViewController.h */,
+				1E6825E31F4C36CF00C45570 /* PurchasesViewController.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1EDBEB1A1F47331B00EEEBEE /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				1EDBEB1E1F4734EC00EEEBEE /* Models.h */,
+				1EDBEB1F1F4734EC00EEEBEE /* Models.m */,
+				1EDBEB211F4739EF00EEEBEE /* ModelStore.h */,
+				1EDBEB221F4739EF00EEEBEE /* ModelStore.m */,
+				1E845C001F4AE08E00E77DDF /* AlertBuilder.h */,
+				1E845C011F4AE08E00E77DDF /* AlertBuilder.m */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		1EE0990A1F41BA0E003FFB9A = {
+			isa = PBXGroup;
+			children = (
+				1EE099151F41BA0E003FFB9A /* PAYTPV Objc Example */,
+				1EE099141F41BA0E003FFB9A /* Products */,
+				1EE0994F1F41BA7B003FFB9A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1EE099141F41BA0E003FFB9A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1EE099131F41BA0E003FFB9A /* PayTPV Objc Example.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1EE099151F41BA0E003FFB9A /* PAYTPV Objc Example */ = {
+			isa = PBXGroup;
+			children = (
+				1EDBEB191F47331700EEEBEE /* Classes */,
+				1EDBEB181F4732F300EEEBEE /* Resources */,
+				1EE099161F41BA0E003FFB9A /* Supporting Files */,
+			);
+			name = "PAYTPV Objc Example";
+			path = "PayTPV Objc Example";
+			sourceTree = "<group>";
+		};
+		1EE099161F41BA0E003FFB9A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1EE099171F41BA0E003FFB9A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1EE0994F1F41BA7B003FFB9A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1EE0994B1F41BA77003FFB9A /* PayTPV.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1EE099121F41BA0E003FFB9A /* PayTPV Objc Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1EE0992A1F41BA0E003FFB9A /* Build configuration list for PBXNativeTarget "PayTPV Objc Example" */;
+			buildPhases = (
+				1EE0990F1F41BA0E003FFB9A /* Sources */,
+				1EE099101F41BA0E003FFB9A /* Frameworks */,
+				1EE099111F41BA0E003FFB9A /* Resources */,
+				1EE0994E1F41BA77003FFB9A /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PayTPV Objc Example";
+			productName = "PayTPV Objc Example";
+			productReference = 1EE099131F41BA0E003FFB9A /* PayTPV Objc Example.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1EE0990B1F41BA0E003FFB9A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = PAYTPV;
+				TargetAttributes = {
+					1EE099121F41BA0E003FFB9A = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 1EE0990E1F41BA0E003FFB9A /* Build configuration list for PBXProject "PAYTPV Objc Example" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1EE0990A1F41BA0E003FFB9A;
+			productRefGroup = 1EE099141F41BA0E003FFB9A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1EE099121F41BA0E003FFB9A /* PayTPV Objc Example */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1EE099111F41BA0E003FFB9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EE099261F41BA0E003FFB9A /* LaunchScreen.storyboard in Resources */,
+				1E845C071F4AE91000E77DDF /* AddCardController.xib in Resources */,
+				1EE099231F41BA0E003FFB9A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1EE0990F1F41BA0E003FFB9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EE0991B1F41BA0E003FFB9A /* AppDelegate.m in Sources */,
+				1EE099181F41BA0E003FFB9A /* main.m in Sources */,
+				1E845C021F4AE08E00E77DDF /* AlertBuilder.m in Sources */,
+				1E6825E41F4C36CF00C45570 /* PurchasesViewController.m in Sources */,
+				1EDBEB1D1F47344400EEEBEE /* ProductsTableViewController.m in Sources */,
+				1EDBEB231F4739EF00EEEBEE /* ModelStore.m in Sources */,
+				1E845C061F4AE91000E77DDF /* AddCardController.m in Sources */,
+				1EDBEB201F4734EC00EEEBEE /* Models.m in Sources */,
+				1E845BFF1F4AD7BD00E77DDF /* CardsTableViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1EE099241F41BA0E003FFB9A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1EE099251F41BA0E003FFB9A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1EE099281F41BA0E003FFB9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1EE099291F41BA0E003FFB9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1EE0992B1F41BA0E003FFB9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "PayTPV Objc Example/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.paytpv.PayTPV-Objc-Example";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1EE0992C1F41BA0E003FFB9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "PayTPV Objc Example/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.paytpv.PayTPV-Objc-Example";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1EE0990E1F41BA0E003FFB9A /* Build configuration list for PBXProject "PAYTPV Objc Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1EE099281F41BA0E003FFB9A /* Debug */,
+				1EE099291F41BA0E003FFB9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1EE0992A1F41BA0E003FFB9A /* Build configuration list for PBXNativeTarget "PayTPV Objc Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1EE0992B1F41BA0E003FFB9A /* Debug */,
+				1EE0992C1F41BA0E003FFB9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1EE0990B1F41BA0E003FFB9A /* Project object */;
+}

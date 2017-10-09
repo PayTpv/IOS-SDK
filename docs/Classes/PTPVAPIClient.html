@@ -1,0 +1,1637 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>PTPVAPIClient Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/objc/Class/PTPVAPIClient" class="dashAnchor"></a>
+    <a title="PTPVAPIClient Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">PAYTPV Docs</a> (100% documented)</p>
+        <p class="header-right"><a href="https://github.com/PayTpv/IOS-SDK"><img src="../img/gh.png"/>View on GitHub</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">PAYTPV Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        PTPVAPIClient Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/PTPVAPIClient.html">PTPVAPIClient</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PTPVCard.html">PTPVCard</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PTPVConfiguration.html">PTPVConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PTPVDCCConfirmation.html">PTPVDCCConfirmation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PTPVDCCDetails.html">PTPVDCCDetails</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PTPVPreauthorization.html">PTPVPreauthorization</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PTPVPurchase.html">PTPVPurchase</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PTPVPurchaseRequest.html">PTPVPurchaseRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PTPVRefund.html">PTPVRefund</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PTPVResponse.html">PTPVResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PTPVSubscription.html">PTPVSubscription</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PTPVSubscriptionDetails.html">PTPVSubscriptionDetails</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PTPVUser.html">PTPVUser</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enums</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/PTPVResult.html">PTPVResult</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/PTPVAPIResponseDecodable.html">PTPVAPIResponseDecodable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/PTPVNSDictionaryEncodable.html">PTPVNSDictionaryEncodable</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Type Definitions.html">Type Definitions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Type Definitions.html#/c:PTPVBlocks.h@T@PTPVAddUserCompletionBlock">PTPVAddUserCompletionBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type Definitions.html#/c:PTPVBlocks.h@T@PTPVAddUserTokenCompletionBlock">PTPVAddUserTokenCompletionBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type Definitions.html#/c:PTPVBlocks.h@T@PTPVCancelPreauthorizationCompletionBlock">PTPVCancelPreauthorizationCompletionBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type Definitions.html#/c:PTPVBlocks.h@T@PTPVConfirmPreauthorizationCompletionBlock">PTPVConfirmPreauthorizationCompletionBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type Definitions.html#/c:PTPVBlocks.h@T@PTPVConfirmPurchaseDCCCompletionBlock">PTPVConfirmPurchaseDCCCompletionBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type Definitions.html#/c:PTPVBlocks.h@T@PTPVCreatePreauthorizationCompletionBlock">PTPVCreatePreauthorizationCompletionBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type Definitions.html#/c:PTPVBlocks.h@T@PTPVCreateSubscriptionCompletionBlock">PTPVCreateSubscriptionCompletionBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type Definitions.html#/c:PTPVBlocks.h@T@PTPVCreateSubscriptionTokenCompletionBlock">PTPVCreateSubscriptionTokenCompletionBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type Definitions.html#/c:PTPVCurrency.h@T@PTPVCurrency">PTPVCurrency</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type Definitions.html#/c:PTPVBlocks.h@T@PTPVEditSubscriptionCompletionBlock">PTPVEditSubscriptionCompletionBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type Definitions.html#/c:PTPVBlocks.h@T@PTPVErrorBlock">PTPVErrorBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type Definitions.html#/c:PTPVBlocks.h@T@PTPVExecutePurchaseCompletionBlock">PTPVExecutePurchaseCompletionBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type Definitions.html#/c:PTPVBlocks.h@T@PTPVExecutePurchaseDCCCompletionBlock">PTPVExecutePurchaseDCCCompletionBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type Definitions.html#/c:PTPVBlocks.h@T@PTPVExecuteRefundCompletionBlock">PTPVExecuteRefundCompletionBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type Definitions.html#/c:PTPVBlocks.h@T@PTPVInfoUserCompletionBlock">PTPVInfoUserCompletionBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type Definitions.html#/c:PTPVBlocks.h@T@PTPVRemoveSubscriptionCompletionBlock">PTPVRemoveSubscriptionCompletionBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type Definitions.html#/c:PTPVBlocks.h@T@PTPVRemoveUserCompletionBlock">PTPVRemoveUserCompletionBlock</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>PTPVAPIClient</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="k">@interface</span> <span class="nc">PTPVAPIClient</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                </div>
+              </div>
+            <p>A client for making requests to the PAYTPV API.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PTPVAPIClient(cm)sharedClient"></a>
+                    <a name="//apple_ref/objc/Method/+sharedClient" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PTPVAPIClient(cm)sharedClient">+sharedClient</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A shared singleton API client.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">+</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">instancetype</span><span class="p">)</span><span class="n">sharedClient</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">shared</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PTPVAPIClient(im)initWithConfiguration:"></a>
+                    <a name="//apple_ref/objc/Method/-initWithConfiguration:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PTPVAPIClient(im)initWithConfiguration:">-initWithConfiguration:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates an API client with the given configuration.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">instancetype</span><span class="p">)</span><span class="nf">initWithConfiguration</span><span class="p">:</span>
+    <span class="p">(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/PTPVConfiguration.html">PTPVConfiguration</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">configuration</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="nf">init</span><span class="p">(</span><span class="nv">configuration</span><span class="p">:</span> <span class="kt"><a href="../Classes/PTPVConfiguration.html">PTPVConfiguration</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>configuration</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The configuration to use</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A PTPVAPIClient instance using the given configuration</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PTPVAPIClient(py)configuration"></a>
+                    <a name="//apple_ref/objc/Property/configuration" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PTPVAPIClient(py)configuration">configuration</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The client&rsquo;s configuration.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">copy</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n"><a href="../Classes/PTPVConfiguration.html">PTPVConfiguration</a></span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">configuration</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">@NSCopying</span> <span class="k">var</span> <span class="nv">configuration</span><span class="p">:</span> <span class="kt"><a href="../Classes/PTPVConfiguration.html">PTPVConfiguration</a></span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Users"></a>
+                <a name="//apple_ref/objc/Section/Users" class="dashAnchor"></a>
+                <a href="#/Users">
+                  <h3 class="section-name">Users</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PTPVAPIClient(im)addUser:completion:"></a>
+                    <a name="//apple_ref/objc/Method/-addUser:completion:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PTPVAPIClient(im)addUser:completion:">-addUser:completion:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Add a card to PAYTPV.</p>
+
+<p>@b Important</p>
+
+<p>This operation must be activated by PAYTPV. Contact us to register for the desired product.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">addUser</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/PTPVCard.html">PTPVCard</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">card</span>
+     <span class="nf">completion</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Type Definitions.html#/c:PTPVBlocks.h@T@PTPVAddUserCompletionBlock">PTPVAddUserCompletionBlock</a></span><span class="p">)</span><span class="nv">completion</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">addUser</span><span class="p">(</span><span class="n">_</span> <span class="nv">card</span><span class="p">:</span> <span class="kt"><a href="../Classes/PTPVCard.html">PTPVCard</a></span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt"><a href="../Type Definitions.html#/c:PTPVBlocks.h@T@PTPVAddUserCompletionBlock">PTPVAddUserCompletionBlock</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>card</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A PTPVCard instance containing the credit card details. - see: PTPVCard</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The callback to run with the returned PTPVUser object, or an error.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PTPVAPIClient(im)addUserWithJETToken:completion:"></a>
+                    <a name="//apple_ref/objc/Method/-addUserWithJETToken:completion:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PTPVAPIClient(im)addUserWithJETToken:completion:">-addUserWithJETToken:completion:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Registers a user based on a token previously obtained trough the solution BankStore JET. - see: <a href="http://developers.paytpv.com/en/documentacion/jet-bankstore">http://developers.paytpv.com/en/documentacion/jet-bankstore</a></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">addUserWithJETToken</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">token</span>
+                 <span class="nf">completion</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Type Definitions.html#/c:PTPVBlocks.h@T@PTPVAddUserTokenCompletionBlock">PTPVAddUserTokenCompletionBlock</a></span><span class="p">)</span><span class="nv">completion</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">addUser</span><span class="p">(</span><span class="n">withJETToken</span> <span class="nv">token</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt"><a href="../Type Definitions.html#/c:PTPVBlocks.h@T@PTPVAddUserTokenCompletionBlock">PTPVAddUserTokenCompletionBlock</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>token</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Token obtained from javascript</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The callback to run with the returned PTPVUser object, or an error.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PTPVAPIClient(im)infoUser:completion:"></a>
+                    <a name="//apple_ref/objc/Method/-infoUser:completion:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PTPVAPIClient(im)infoUser:completion:">-infoUser:completion:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the user information for the registered user.</p>
+
+<p>This function will be used to confirm to the customers of the business which card will be used to make the payment. This step is optional but it is convenient to avoid mistrust.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">infoUser</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/PTPVUser.html">PTPVUser</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">user</span>
+      <span class="nf">completion</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Type Definitions.html#/c:PTPVBlocks.h@T@PTPVInfoUserCompletionBlock">PTPVInfoUserCompletionBlock</a></span><span class="p">)</span><span class="nv">completion</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">infoUser</span><span class="p">(</span><span class="n">_</span> <span class="nv">user</span><span class="p">:</span> <span class="kt"><a href="../Classes/PTPVUser.html">PTPVUser</a></span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt"><a href="../Type Definitions.html#/c:PTPVBlocks.h@T@PTPVInfoUserCompletionBlock">PTPVInfoUserCompletionBlock</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>user</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A PTPVUser instance containing the user registration within the system. - see: PTPVUser</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The callback to run with the returned PTPVCard object, or an error.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PTPVAPIClient(im)removeUser:completion:"></a>
+                    <a name="//apple_ref/objc/Method/-removeUser:completion:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PTPVAPIClient(im)removeUser:completion:">-removeUser:completion:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Removes a user from the account of the business.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">removeUser</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/PTPVUser.html">PTPVUser</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">user</span>
+        <span class="nf">completion</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Type Definitions.html#/c:PTPVBlocks.h@T@PTPVErrorBlock">PTPVErrorBlock</a></span><span class="p">)</span><span class="nv">completion</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">remove</span><span class="p">(</span><span class="n">_</span> <span class="nv">user</span><span class="p">:</span> <span class="kt"><a href="../Classes/PTPVUser.html">PTPVUser</a></span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt"><a href="../Type Definitions.html#/c:PTPVBlocks.h@T@PTPVErrorBlock">PTPVErrorBlock</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>user</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A PTPVUser instance containing the user registration within the system. - see: PTPVUser</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The callback to run with the returned error if there is one.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Purchase"></a>
+                <a name="//apple_ref/objc/Section/Purchase" class="dashAnchor"></a>
+                <a href="#/Purchase">
+                  <h3 class="section-name">Purchase</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PTPVAPIClient(im)executePurchase:forUser:completion:"></a>
+                    <a name="//apple_ref/objc/Method/-executePurchase:forUser:completion:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PTPVAPIClient(im)executePurchase:forUser:completion:">-executePurchase:forUser:completion:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Execute a payment with the user&rsquo;s details.</p>
+
+<p>Once the user is registered in the system, charges may be made to their account by sending their credentials and data of the operation.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">executePurchase</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/PTPVPurchaseRequest.html">PTPVPurchaseRequest</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">purchase</span>
+                <span class="nf">forUser</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/PTPVUser.html">PTPVUser</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">user</span>
+             <span class="nf">completion</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Type Definitions.html#/c:PTPVBlocks.h@T@PTPVExecutePurchaseCompletionBlock">PTPVExecutePurchaseCompletionBlock</a></span><span class="p">)</span><span class="nv">completion</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">executePurchase</span><span class="p">(</span><span class="n">_</span> <span class="nv">purchase</span><span class="p">:</span> <span class="kt"><a href="../Classes/PTPVPurchaseRequest.html">PTPVPurchaseRequest</a></span><span class="p">,</span> <span class="k">for</span> <span class="nv">user</span><span class="p">:</span> <span class="kt"><a href="../Classes/PTPVUser.html">PTPVUser</a></span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt"><a href="../Type Definitions.html#/c:PTPVBlocks.h@T@PTPVExecutePurchaseCompletionBlock">PTPVExecutePurchaseCompletionBlock</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>purchase</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A PTPVPurchaseRequest instance containing the purchase details. - see: PTPVPurchaseRequest</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>user</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A PTPVUser instance containing the user details. - see: PTPVUser</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The callback to run with the returned PTPVPurchase object, or an error.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PTPVAPIClient(im)executePurchaseDCC:forUser:completion:"></a>
+                    <a name="//apple_ref/objc/Method/-executePurchaseDCC:forUser:completion:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PTPVAPIClient(im)executePurchaseDCC:forUser:completion:">-executePurchaseDCC:forUser:completion:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Execute a Dynamic currency conversion purchase with the user&rsquo;s details.</p>
+
+<p>@b Important</p>
+
+<p>This operation must be activated by PAYTPV. Contact us to register for the desired product.</p>
+
+<p>Once the user is registered on the system, they can make payments with their account by sending their credentials and operation information. The DCC caseload requires that a payment process is carried out in two steps: execute_purchase_dcc, where the native currency of the card is received (in the case of the card having the same currency as the product associated with the transaction, the result will be a 1:1 conversion) and will be subsequently confirmed with the confirm_purchase_dcc method with the selected currency and the original session of the transaction.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">executePurchaseDCC</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/PTPVPurchaseRequest.html">PTPVPurchaseRequest</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">request</span>
+                   <span class="nf">forUser</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/PTPVUser.html">PTPVUser</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">user</span>
+                <span class="nf">completion</span><span class="p">:</span>
+                    <span class="p">(</span><span class="n">nonnull</span> <span class="n"><a href="../Type Definitions.html#/c:PTPVBlocks.h@T@PTPVExecutePurchaseDCCCompletionBlock">PTPVExecutePurchaseDCCCompletionBlock</a></span><span class="p">)</span><span class="nv">completion</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">executePurchaseDCC</span><span class="p">(</span><span class="n">_</span> <span class="nv">request</span><span class="p">:</span> <span class="kt"><a href="../Classes/PTPVPurchaseRequest.html">PTPVPurchaseRequest</a></span><span class="p">,</span> <span class="k">for</span> <span class="nv">user</span><span class="p">:</span> <span class="kt"><a href="../Classes/PTPVUser.html">PTPVUser</a></span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt"><a href="../Type Definitions.html#/c:PTPVBlocks.h@T@PTPVExecutePurchaseDCCCompletionBlock">PTPVExecutePurchaseDCCCompletionBlock</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>request</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A PTPVPurchaseRequest instance containing the purchase details. - see: PTPVPurchaseRequest:initDCCWithUser</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>user</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A PTPVUser instance containing the user details. - see: PTPVUser</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The callback to run with the returned PTPVDCCDetails object, or an error.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PTPVAPIClient(im)confirmPurchaseDCC:completion:"></a>
+                    <a name="//apple_ref/objc/Method/-confirmPurchaseDCC:completion:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PTPVAPIClient(im)confirmPurchaseDCC:completion:">-confirmPurchaseDCC:completion:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Confirms the currency for a dcc transaction.</p>
+
+<p>Once the DS_MERCHANT_DCC_SESSION parameter has been restored when a DCC purchase has been made, the state of the transaction will be “waiting” for the currency confirmation. The business must suggest to the client the currency in which they wish to pay (showing the conversion in real time) and when it is selected, the business must confirm the authorisation with the currency selected by the end user.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">confirmPurchaseDCC</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/PTPVDCCConfirmation.html">PTPVDCCConfirmation</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">request</span>
+                <span class="nf">completion</span><span class="p">:</span>
+                    <span class="p">(</span><span class="n">nonnull</span> <span class="n"><a href="../Type Definitions.html#/c:PTPVBlocks.h@T@PTPVConfirmPurchaseDCCCompletionBlock">PTPVConfirmPurchaseDCCCompletionBlock</a></span><span class="p">)</span><span class="nv">completion</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">confirmPurchaseDCC</span><span class="p">(</span><span class="n">_</span> <span class="nv">request</span><span class="p">:</span> <span class="kt"><a href="../Classes/PTPVDCCConfirmation.html">PTPVDCCConfirmation</a></span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt"><a href="../Type Definitions.html#/c:PTPVBlocks.h@T@PTPVConfirmPurchaseDCCCompletionBlock">PTPVConfirmPurchaseDCCCompletionBlock</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>request</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A PTPVDCCConfirmation instance containing the dcc details. - see: PTPVDCCConfirmation</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The callback to run with the returned PTPVPurchase object, or an error.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PTPVAPIClient(im)executeRefund:forUser:completion:"></a>
+                    <a name="//apple_ref/objc/Method/-executeRefund:forUser:completion:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PTPVAPIClient(im)executeRefund:forUser:completion:">-executeRefund:forUser:completion:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Refunds a purchase.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">executeRefund</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/PTPVRefund.html">PTPVRefund</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">refund</span>
+              <span class="nf">forUser</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/PTPVUser.html">PTPVUser</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">user</span>
+           <span class="nf">completion</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Type Definitions.html#/c:PTPVBlocks.h@T@PTPVExecuteRefundCompletionBlock">PTPVExecuteRefundCompletionBlock</a></span><span class="p">)</span><span class="nv">completion</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">execute</span><span class="p">(</span><span class="n">_</span> <span class="nv">refund</span><span class="p">:</span> <span class="kt"><a href="../Classes/PTPVRefund.html">PTPVRefund</a></span><span class="p">,</span> <span class="k">for</span> <span class="nv">user</span><span class="p">:</span> <span class="kt"><a href="../Classes/PTPVUser.html">PTPVUser</a></span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt"><a href="../Type Definitions.html#/c:PTPVBlocks.h@T@PTPVExecuteRefundCompletionBlock">PTPVExecuteRefundCompletionBlock</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>refund</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A PTPVRefund instance containing the purchase details</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>user</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A PTPVUser instance containing the user details. - see: PTPVUser</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The callback to run with the returned PTPVRefund object, or an error.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Subscription"></a>
+                <a name="//apple_ref/objc/Section/Subscription" class="dashAnchor"></a>
+                <a href="#/Subscription">
+                  <h3 class="section-name">Subscription</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PTPVAPIClient(im)createSubscription:withCard:completion:"></a>
+                    <a name="//apple_ref/objc/Method/-createSubscription:withCard:completion:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PTPVAPIClient(im)createSubscription:withCard:completion:">-createSubscription:withCard:completion:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a subscription to the account of the business with the given credit card.</p>
+
+<p>The registration of a subscription implies the registration of a user in the BankStore system of PAYTPV. This process is completely independent from the isolated charge to a customer of the business.</p>
+
+<p>If the execution of the first installment has an error for several reasons (balance, validity of the card, etc&hellip;), the subscription will be canceled having to create a new subscription.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">createSubscription</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/PTPVSubscription.html">PTPVSubscription</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">subscription</span>
+                  <span class="nf">withCard</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/PTPVCard.html">PTPVCard</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">card</span>
+                <span class="nf">completion</span><span class="p">:</span>
+                    <span class="p">(</span><span class="n">nonnull</span> <span class="n"><a href="../Type Definitions.html#/c:PTPVBlocks.h@T@PTPVCreateSubscriptionCompletionBlock">PTPVCreateSubscriptionCompletionBlock</a></span><span class="p">)</span><span class="nv">completion</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">createSubscription</span><span class="p">(</span><span class="n">_</span> <span class="nv">subscription</span><span class="p">:</span> <span class="kt"><a href="../Classes/PTPVSubscription.html">PTPVSubscription</a></span><span class="p">,</span> <span class="n">with</span> <span class="nv">card</span><span class="p">:</span> <span class="kt"><a href="../Classes/PTPVCard.html">PTPVCard</a></span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt"><a href="../Type Definitions.html#/c:PTPVBlocks.h@T@PTPVCreateSubscriptionCompletionBlock">PTPVCreateSubscriptionCompletionBlock</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>subscription</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A PTPVSubscription instance containing the subscription details. - see: PTPVSubscription</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>card</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A PTPVCard instance containing the credit card details. - see: PTPVCard</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The callback to run with the returned PTPVSubscriptionDetails object, or an error.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PTPVAPIClient(im)createSubscription:withUser:completion:"></a>
+                    <a name="//apple_ref/objc/Method/-createSubscription:withUser:completion:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PTPVAPIClient(im)createSubscription:withUser:completion:">-createSubscription:withUser:completion:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a subscription to the account of the business for a user that was already registered in the system, without it being necessary in this case to send card data again</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">createSubscription</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/PTPVSubscription.html">PTPVSubscription</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">subscription</span>
+                  <span class="nf">withUser</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/PTPVUser.html">PTPVUser</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">user</span>
+                <span class="nf">completion</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Type Definitions.html#/c:PTPVBlocks.h@T@PTPVCreateSubscriptionTokenCompletionBlock">PTPVCreateSubscriptionTokenCompletionBlock</a></span><span class="p">)</span>
+                               <span class="n">completion</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">createSubscription</span><span class="p">(</span><span class="n">_</span> <span class="nv">subscription</span><span class="p">:</span> <span class="kt"><a href="../Classes/PTPVSubscription.html">PTPVSubscription</a></span><span class="p">,</span> <span class="n">with</span> <span class="nv">user</span><span class="p">:</span> <span class="kt"><a href="../Classes/PTPVUser.html">PTPVUser</a></span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt"><a href="../Type Definitions.html#/c:PTPVBlocks.h@T@PTPVCreateSubscriptionTokenCompletionBlock">PTPVCreateSubscriptionTokenCompletionBlock</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>subscription</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A PTPVSubscription instance containing the subscription details. - see: PTPVSubscription</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>user</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A PTPVUser instance containing the user details. - see: PTPVUser</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The callback to run with the returned PTPVSubscriptionDetails object, or an error.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PTPVAPIClient(im)editSubscription:forUser:execute:completion:"></a>
+                    <a name="//apple_ref/objc/Method/-editSubscription:forUser:execute:completion:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PTPVAPIClient(im)editSubscription:forUser:execute:completion:">-editSubscription:forUser:execute:completion:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Updates an existing subscription.</p>
+
+<p>If a user renews their subscription or simply wants to increase the payment of the service we offer the service of editing a subscription. In this case it will not be possible to change the currency nor the bank details of the customer of the business. The modification of the subscription involves the prior registration of a user in subscription mode in the BankStore system of PAYTPV. This process is completely independent from the isolated charge to a customer of the business.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">editSubscription</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/PTPVSubscription.html">PTPVSubscription</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">subscription</span>
+                 <span class="nf">forUser</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/PTPVUser.html">PTPVUser</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">user</span>
+                 <span class="nf">execute</span><span class="p">:(</span><span class="n">BOOL</span><span class="p">)</span><span class="nv">execute</span>
+              <span class="nf">completion</span><span class="p">:</span>
+                  <span class="p">(</span><span class="n">nonnull</span> <span class="n"><a href="../Type Definitions.html#/c:PTPVBlocks.h@T@PTPVEditSubscriptionCompletionBlock">PTPVEditSubscriptionCompletionBlock</a></span><span class="p">)</span><span class="nv">completion</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">edit</span><span class="p">(</span><span class="n">_</span> <span class="nv">subscription</span><span class="p">:</span> <span class="kt"><a href="../Classes/PTPVSubscription.html">PTPVSubscription</a></span><span class="p">,</span> <span class="k">for</span> <span class="nv">user</span><span class="p">:</span> <span class="kt"><a href="../Classes/PTPVUser.html">PTPVUser</a></span><span class="p">,</span> <span class="nv">execute</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt"><a href="../Type Definitions.html#/c:PTPVBlocks.h@T@PTPVEditSubscriptionCompletionBlock">PTPVEditSubscriptionCompletionBlock</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>subscription</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A PTPVSubscription instance containing the subscription details. - see: PTPVSubscription</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>user</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A PTPVUser instance containing the user details. - see: PTPVUser</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>execute</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>If the registration process involves the payment of the first installment the value of DS_EXECUTE must be <code>true</code>. If you only want the subscription registration without the payment of the first installment (it will be executed with the parameters sent) its value must be <code>false</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The callback to run with the returned PTPVSubscriptionDetails object, or an error.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PTPVAPIClient(im)removeSubscription:completion:"></a>
+                    <a name="//apple_ref/objc/Method/-removeSubscription:completion:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PTPVAPIClient(im)removeSubscription:completion:">-removeSubscription:completion:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Removes a subscription from the account of the business.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">removeSubscription</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/PTPVUser.html">PTPVUser</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">request</span>
+                <span class="nf">completion</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Type Definitions.html#/c:PTPVBlocks.h@T@PTPVErrorBlock">PTPVErrorBlock</a></span><span class="p">)</span><span class="nv">completion</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">removeSubscription</span><span class="p">(</span><span class="n">_</span> <span class="nv">request</span><span class="p">:</span> <span class="kt"><a href="../Classes/PTPVUser.html">PTPVUser</a></span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt"><a href="../Type Definitions.html#/c:PTPVBlocks.h@T@PTPVErrorBlock">PTPVErrorBlock</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>request</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A PTPVUser instance containing the user details. - see: PTPVUser</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The callback to run with the returned error if there is one.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Preauthorization"></a>
+                <a name="//apple_ref/objc/Section/Preauthorization" class="dashAnchor"></a>
+                <a href="#/Preauthorization">
+                  <h3 class="section-name">Preauthorization</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PTPVAPIClient(im)createPreauthorization:forUser:completion:"></a>
+                    <a name="//apple_ref/objc/Method/-createPreauthorization:forUser:completion:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PTPVAPIClient(im)createPreauthorization:forUser:completion:">-createPreauthorization:forUser:completion:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a user preauthorization in the system.</p>
+
+<p>Once the user is registered in the system, preauthorization operations may be performed by sending their credentials and data of the operation.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">createPreauthorization</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/PTPVPurchaseRequest.html">PTPVPurchaseRequest</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">request</span>
+                       <span class="nf">forUser</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/PTPVUser.html">PTPVUser</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">user</span>
+                    <span class="nf">completion</span><span class="p">:</span>
+                        <span class="p">(</span><span class="n">nonnull</span> <span class="n"><a href="../Type Definitions.html#/c:PTPVBlocks.h@T@PTPVCreatePreauthorizationCompletionBlock">PTPVCreatePreauthorizationCompletionBlock</a></span><span class="p">)</span>
+                            <span class="n">completion</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">createPreauthorization</span><span class="p">(</span><span class="n">_</span> <span class="nv">request</span><span class="p">:</span> <span class="kt"><a href="../Classes/PTPVPurchaseRequest.html">PTPVPurchaseRequest</a></span><span class="p">,</span> <span class="k">for</span> <span class="nv">user</span><span class="p">:</span> <span class="kt"><a href="../Classes/PTPVUser.html">PTPVUser</a></span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt"><a href="../Type Definitions.html#/c:PTPVBlocks.h@T@PTPVCreatePreauthorizationCompletionBlock">PTPVCreatePreauthorizationCompletionBlock</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>request</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A PTPVPurchaseRequest instance containing the purchase details. - see: PTPVPurchaseRequest</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>user</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A PTPVUser instance containing the user details. - see: PTPVUser</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The callback to run with the returned PTPVPurchase object, or an error.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PTPVAPIClient(im)confirmPreauthorization:forUser:completion:"></a>
+                    <a name="//apple_ref/objc/Method/-confirmPreauthorization:forUser:completion:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PTPVAPIClient(im)confirmPreauthorization:forUser:completion:">-confirmPreauthorization:forUser:completion:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Confirms a preauthorization.</p>
+
+<p>Once a preauthorization operation has been performed and authorized, it can be confirmed to make the cash payment within 7 days; after that date, preauthorizations become invalid. The amount of the preauthorization confirmation can be less than, equal to or greater than 15% of the original preauthorization.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">confirmPreauthorization</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/PTPVPreauthorization.html">PTPVPreauthorization</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">preauthorization</span>
+                        <span class="nf">forUser</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/PTPVUser.html">PTPVUser</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">user</span>
+                     <span class="nf">completion</span><span class="p">:</span>
+                         <span class="p">(</span><span class="n">nonnull</span> <span class="n"><a href="../Type Definitions.html#/c:PTPVBlocks.h@T@PTPVConfirmPreauthorizationCompletionBlock">PTPVConfirmPreauthorizationCompletionBlock</a></span><span class="p">)</span>
+                             <span class="n">completion</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">confirmPreauthorization</span><span class="p">(</span><span class="n">_</span> <span class="nv">preauthorization</span><span class="p">:</span> <span class="kt"><a href="../Classes/PTPVPreauthorization.html">PTPVPreauthorization</a></span><span class="p">,</span> <span class="k">for</span> <span class="nv">user</span><span class="p">:</span> <span class="kt"><a href="../Classes/PTPVUser.html">PTPVUser</a></span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt"><a href="../Type Definitions.html#/c:PTPVBlocks.h@T@PTPVConfirmPreauthorizationCompletionBlock">PTPVConfirmPreauthorizationCompletionBlock</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>preauthorization</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A PTPVPreauthorization instance containing the preauthorization details. - see: PTPVPreauthorization</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>user</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A PTPVUser instance containing the user details. - see: PTPVUser</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The callback to run with the returned PTPVPurchase object, or an error.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PTPVAPIClient(im)cancelPreauthorization:forUser:completion:"></a>
+                    <a name="//apple_ref/objc/Method/-cancelPreauthorization:forUser:completion:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PTPVAPIClient(im)cancelPreauthorization:forUser:completion:">-cancelPreauthorization:forUser:completion:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Cancels a preauthorization.</p>
+
+<p>Once a preauthorization has been performed, it can be canceled within 7 days.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">cancelPreauthorization</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/PTPVPreauthorization.html">PTPVPreauthorization</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">preauthorization</span>
+                       <span class="nf">forUser</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/PTPVUser.html">PTPVUser</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">user</span>
+                    <span class="nf">completion</span><span class="p">:</span>
+                        <span class="p">(</span><span class="n">nonnull</span> <span class="n"><a href="../Type Definitions.html#/c:PTPVBlocks.h@T@PTPVCancelPreauthorizationCompletionBlock">PTPVCancelPreauthorizationCompletionBlock</a></span><span class="p">)</span>
+                            <span class="n">completion</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">cancel</span><span class="p">(</span><span class="n">_</span> <span class="nv">preauthorization</span><span class="p">:</span> <span class="kt"><a href="../Classes/PTPVPreauthorization.html">PTPVPreauthorization</a></span><span class="p">,</span> <span class="k">for</span> <span class="nv">user</span><span class="p">:</span> <span class="kt"><a href="../Classes/PTPVUser.html">PTPVUser</a></span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt"><a href="../Type Definitions.html#/c:PTPVBlocks.h@T@PTPVCancelPreauthorizationCompletionBlock">PTPVCancelPreauthorizationCompletionBlock</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>preauthorization</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A PTPVPreauthorization instance containing the preauthorization details. - see: PTPVPreauthorization</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>user</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A PTPVUser instance containing the user details. - see: PTPVUser</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The callback to run with the returned PTPVPurchase object, or an error.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PTPVAPIClient(im)confirmDeferredPreauthorization:forUser:completion:"></a>
+                    <a name="//apple_ref/objc/Method/-confirmDeferredPreauthorization:forUser:completion:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PTPVAPIClient(im)confirmDeferredPreauthorization:forUser:completion:">-confirmDeferredPreauthorization:forUser:completion:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Confirms a deferred preauthorization in the system.</p>
+
+<p>Once a deferred pre-authorisation operation has been carried out and authorised, it can be confirmed to carry out the effective payment within the following 72 hours; after this time, the deferred pre-authorisations lose their validity. The amount of the deferred pre-authorisation must be exactly equal to that of the original deferred pre-authorisation.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span>
+<span class="nf">confirmDeferredPreauthorization</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/PTPVPreauthorization.html">PTPVPreauthorization</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">preauthorization</span>
+                        <span class="nf">forUser</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/PTPVUser.html">PTPVUser</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">user</span>
+                     <span class="nf">completion</span><span class="p">:</span>
+                         <span class="p">(</span><span class="n">nonnull</span> <span class="n"><a href="../Type Definitions.html#/c:PTPVBlocks.h@T@PTPVCancelPreauthorizationCompletionBlock">PTPVCancelPreauthorizationCompletionBlock</a></span><span class="p">)</span>
+                             <span class="n">completion</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">confirmDeferredPreauthorization</span><span class="p">(</span><span class="n">_</span> <span class="nv">preauthorization</span><span class="p">:</span> <span class="kt"><a href="../Classes/PTPVPreauthorization.html">PTPVPreauthorization</a></span><span class="p">,</span> <span class="k">for</span> <span class="nv">user</span><span class="p">:</span> <span class="kt"><a href="../Classes/PTPVUser.html">PTPVUser</a></span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt"><a href="../Type Definitions.html#/c:PTPVBlocks.h@T@PTPVCancelPreauthorizationCompletionBlock">PTPVCancelPreauthorizationCompletionBlock</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>preauthorization</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A PTPVPreauthorization instance containing the preauthorization details. - see: PTPVPreauthorization</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>user</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A PTPVUser instance containing the user details. - see: PTPVUser</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The callback to run with the returned PTPVPurchase object, or an error.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PTPVAPIClient(im)cancelDeferredPreauthorization:forUser:completion:"></a>
+                    <a name="//apple_ref/objc/Method/-cancelDeferredPreauthorization:forUser:completion:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PTPVAPIClient(im)cancelDeferredPreauthorization:forUser:completion:">-cancelDeferredPreauthorization:forUser:completion:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Cancels a deferred preauthorization in the system.</p>
+
+<p>Once a deferred pre-authorisation has been carried out, it can be cancelled within the following 72 hours.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span>
+<span class="nf">cancelDeferredPreauthorization</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/PTPVPreauthorization.html">PTPVPreauthorization</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">preauthorization</span>
+                       <span class="nf">forUser</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/PTPVUser.html">PTPVUser</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">user</span>
+                    <span class="nf">completion</span><span class="p">:</span>
+                        <span class="p">(</span><span class="n">nonnull</span> <span class="n"><a href="../Type Definitions.html#/c:PTPVBlocks.h@T@PTPVCancelPreauthorizationCompletionBlock">PTPVCancelPreauthorizationCompletionBlock</a></span><span class="p">)</span>
+                            <span class="n">completion</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">cancelDeferredPreauthorization</span><span class="p">(</span><span class="n">_</span> <span class="nv">preauthorization</span><span class="p">:</span> <span class="kt"><a href="../Classes/PTPVPreauthorization.html">PTPVPreauthorization</a></span><span class="p">,</span> <span class="k">for</span> <span class="nv">user</span><span class="p">:</span> <span class="kt"><a href="../Classes/PTPVUser.html">PTPVUser</a></span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt"><a href="../Type Definitions.html#/c:PTPVBlocks.h@T@PTPVCancelPreauthorizationCompletionBlock">PTPVCancelPreauthorizationCompletionBlock</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>preauthorization</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A PTPVPreauthorization instance containing the preauthorization details. - see: PTPVPreauthorization</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>user</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A PTPVUser instance containing the user details. - see: PTPVUser</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The callback to run with the returned PTPVPurchase object, or an error.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2017 <a class="link" href="https://www.paytpv.com/" target="_blank" rel="external">PAYTPV</a>. All rights reserved. (Last updated: 2017-10-09)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.8.3</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

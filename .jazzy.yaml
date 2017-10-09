@@ -1,0 +1,10 @@
+clean: true
+objc: true
+author: PAYTPV
+author_url: https://www.paytpv.com/
+github_url: https://github.com/PayTpv/IOS-SDK
+umbrella_header: PAYTPV/PAYTPV.h
+framework_root: .
+module: PAYTPV
+sdk: iphonesimulator
+

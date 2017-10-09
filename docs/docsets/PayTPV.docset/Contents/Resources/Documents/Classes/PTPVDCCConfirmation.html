@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>PTPVDCCConfirmation Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/objc/Class/PTPVDCCConfirmation" class="dashAnchor"></a>
+    <a title="PTPVDCCConfirmation Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">PAYTPV Docs</a> (100% documented)</p>
+        <p class="header-right"><a href="https://github.com/PayTpv/IOS-SDK"><img src="../img/gh.png"/>View on GitHub</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">PAYTPV Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        PTPVDCCConfirmation Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/PTPVAPIClient.html">PTPVAPIClient</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PTPVCard.html">PTPVCard</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PTPVConfiguration.html">PTPVConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PTPVDCCConfirmation.html">PTPVDCCConfirmation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PTPVDCCDetails.html">PTPVDCCDetails</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PTPVPreauthorization.html">PTPVPreauthorization</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PTPVPurchase.html">PTPVPurchase</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PTPVPurchaseRequest.html">PTPVPurchaseRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PTPVRefund.html">PTPVRefund</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PTPVResponse.html">PTPVResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PTPVSubscription.html">PTPVSubscription</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PTPVSubscriptionDetails.html">PTPVSubscriptionDetails</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PTPVUser.html">PTPVUser</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enums</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/PTPVResult.html">PTPVResult</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/PTPVAPIResponseDecodable.html">PTPVAPIResponseDecodable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/PTPVNSDictionaryEncodable.html">PTPVNSDictionaryEncodable</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Type Definitions.html">Type Definitions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Type Definitions.html#/c:PTPVBlocks.h@T@PTPVAddUserCompletionBlock">PTPVAddUserCompletionBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type Definitions.html#/c:PTPVBlocks.h@T@PTPVAddUserTokenCompletionBlock">PTPVAddUserTokenCompletionBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type Definitions.html#/c:PTPVBlocks.h@T@PTPVCancelPreauthorizationCompletionBlock">PTPVCancelPreauthorizationCompletionBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type Definitions.html#/c:PTPVBlocks.h@T@PTPVConfirmPreauthorizationCompletionBlock">PTPVConfirmPreauthorizationCompletionBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type Definitions.html#/c:PTPVBlocks.h@T@PTPVConfirmPurchaseDCCCompletionBlock">PTPVConfirmPurchaseDCCCompletionBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type Definitions.html#/c:PTPVBlocks.h@T@PTPVCreatePreauthorizationCompletionBlock">PTPVCreatePreauthorizationCompletionBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type Definitions.html#/c:PTPVBlocks.h@T@PTPVCreateSubscriptionCompletionBlock">PTPVCreateSubscriptionCompletionBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type Definitions.html#/c:PTPVBlocks.h@T@PTPVCreateSubscriptionTokenCompletionBlock">PTPVCreateSubscriptionTokenCompletionBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type Definitions.html#/c:PTPVCurrency.h@T@PTPVCurrency">PTPVCurrency</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type Definitions.html#/c:PTPVBlocks.h@T@PTPVEditSubscriptionCompletionBlock">PTPVEditSubscriptionCompletionBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type Definitions.html#/c:PTPVBlocks.h@T@PTPVErrorBlock">PTPVErrorBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type Definitions.html#/c:PTPVBlocks.h@T@PTPVExecutePurchaseCompletionBlock">PTPVExecutePurchaseCompletionBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type Definitions.html#/c:PTPVBlocks.h@T@PTPVExecutePurchaseDCCCompletionBlock">PTPVExecutePurchaseDCCCompletionBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type Definitions.html#/c:PTPVBlocks.h@T@PTPVExecuteRefundCompletionBlock">PTPVExecuteRefundCompletionBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type Definitions.html#/c:PTPVBlocks.h@T@PTPVInfoUserCompletionBlock">PTPVInfoUserCompletionBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type Definitions.html#/c:PTPVBlocks.h@T@PTPVRemoveSubscriptionCompletionBlock">PTPVRemoveSubscriptionCompletionBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type Definitions.html#/c:PTPVBlocks.h@T@PTPVRemoveUserCompletionBlock">PTPVRemoveUserCompletionBlock</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>PTPVDCCConfirmation</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="k">@interface</span> <span class="nc">PTPVDCCConfirmation</span> <span class="p">:</span> <span class="nc">NSObject</span> <span class="o">&lt;</span><span class="n"><a href="../Protocols/PTPVNSDictionaryEncodable.html">PTPVNSDictionaryEncodable</a></span><span class="o">&gt;</span></code></pre>
+
+                </div>
+              </div>
+            <p>Represents the dcc purchase confirmation</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PTPVDCCConfirmation(im)initWithOrder:currency:session:"></a>
+                    <a name="//apple_ref/objc/Method/-initWithOrder:currency:session:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PTPVDCCConfirmation(im)initWithOrder:currency:session:">-initWithOrder:currency:session:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a PTPVDCCConfirmation</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">instancetype</span><span class="p">)</span><span class="nf">initWithOrder</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">order</span>
+                             <span class="nf">currency</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">currency</span>
+                              <span class="nf">session</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">session</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="nf">init</span><span class="p">(</span><span class="nv">order</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">currency</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">session</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>order</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Reference of the original operation.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>currency</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Currency of the chosen transaction. It can be the PAYTPV product or the native one selected by the end user. The amount will be sent in execute_purchase_dcc if it is the same as the product and the converted one in case it is different.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>session</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The session sent in the execute_purchase_dcc process</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A PTPVDCCConfirmation instance populated with the provided values</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PTPVDCCConfirmation(im)initWithDCCDetails:currency:"></a>
+                    <a name="//apple_ref/objc/Method/-initWithDCCDetails:currency:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PTPVDCCConfirmation(im)initWithDCCDetails:currency:">-initWithDCCDetails:currency:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a PTPVDCCConfirmation</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">instancetype</span><span class="p">)</span><span class="nf">initWithDCCDetails</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/PTPVDCCDetails.html">PTPVDCCDetails</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">details</span>
+                                  <span class="nf">currency</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">currency</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="nf">init</span><span class="p">(</span><span class="n">dccDetails</span> <span class="nv">details</span><span class="p">:</span> <span class="kt"><a href="../Classes/PTPVDCCDetails.html">PTPVDCCDetails</a></span><span class="p">,</span> <span class="nv">currency</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>details</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The PTPVDCCDetails received when making an execute_purchase_dcc request. The order and session will be automatically populated with the ones in the dcc details</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>currency</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Currency of the chosen transaction. It can be the PAYTPV product or the native one selected by the end user. The amount will be sent in execute_purchase_dcc if it is the same as the product and the converted one in case it is different.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A PTPVDCCConfirmation instance populated with the provided values</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PTPVDCCConfirmation(py)order"></a>
+                    <a name="//apple_ref/objc/Property/order" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PTPVDCCConfirmation(py)order">order</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Reference of the original operation.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">copy</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">,</span> <span class="n">nullable</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">order</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">order</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PTPVDCCConfirmation(py)currency"></a>
+                    <a name="//apple_ref/objc/Property/currency" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PTPVDCCConfirmation(py)currency">currency</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Currency of the chosen transaction. It can be the PAYTPV product or the native one selected by the end user. The amount will be sent in execute_purchase_dcc if it is the same as the product and the converted one in case it is different.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">copy</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">,</span> <span class="n">nullable</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">currency</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">currency</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PTPVDCCConfirmation(py)session"></a>
+                    <a name="//apple_ref/objc/Property/session" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PTPVDCCConfirmation(py)session">session</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The session sent in the execute_purchase_dcc process.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">copy</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">,</span> <span class="n">nullable</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">session</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">session</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2017 <a class="link" href="https://www.paytpv.com/" target="_blank" rel="external">PAYTPV</a>. All rights reserved. (Last updated: 2017-10-09)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.8.3</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

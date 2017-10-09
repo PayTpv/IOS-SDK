@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>PTPVConfiguration Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/objc/Class/PTPVConfiguration" class="dashAnchor"></a>
+    <a title="PTPVConfiguration Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">PAYTPV Docs</a> (100% documented)</p>
+        <p class="header-right"><a href="https://github.com/PayTpv/IOS-SDK"><img src="../img/gh.png"/>View on GitHub</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">PAYTPV Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        PTPVConfiguration Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/PTPVAPIClient.html">PTPVAPIClient</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PTPVCard.html">PTPVCard</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PTPVConfiguration.html">PTPVConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PTPVDCCConfirmation.html">PTPVDCCConfirmation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PTPVDCCDetails.html">PTPVDCCDetails</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PTPVPreauthorization.html">PTPVPreauthorization</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PTPVPurchase.html">PTPVPurchase</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PTPVPurchaseRequest.html">PTPVPurchaseRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PTPVRefund.html">PTPVRefund</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PTPVResponse.html">PTPVResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PTPVSubscription.html">PTPVSubscription</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PTPVSubscriptionDetails.html">PTPVSubscriptionDetails</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PTPVUser.html">PTPVUser</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enums</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/PTPVResult.html">PTPVResult</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/PTPVAPIResponseDecodable.html">PTPVAPIResponseDecodable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/PTPVNSDictionaryEncodable.html">PTPVNSDictionaryEncodable</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Type Definitions.html">Type Definitions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Type Definitions.html#/c:PTPVBlocks.h@T@PTPVAddUserCompletionBlock">PTPVAddUserCompletionBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type Definitions.html#/c:PTPVBlocks.h@T@PTPVAddUserTokenCompletionBlock">PTPVAddUserTokenCompletionBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type Definitions.html#/c:PTPVBlocks.h@T@PTPVCancelPreauthorizationCompletionBlock">PTPVCancelPreauthorizationCompletionBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type Definitions.html#/c:PTPVBlocks.h@T@PTPVConfirmPreauthorizationCompletionBlock">PTPVConfirmPreauthorizationCompletionBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type Definitions.html#/c:PTPVBlocks.h@T@PTPVConfirmPurchaseDCCCompletionBlock">PTPVConfirmPurchaseDCCCompletionBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type Definitions.html#/c:PTPVBlocks.h@T@PTPVCreatePreauthorizationCompletionBlock">PTPVCreatePreauthorizationCompletionBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type Definitions.html#/c:PTPVBlocks.h@T@PTPVCreateSubscriptionCompletionBlock">PTPVCreateSubscriptionCompletionBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type Definitions.html#/c:PTPVBlocks.h@T@PTPVCreateSubscriptionTokenCompletionBlock">PTPVCreateSubscriptionTokenCompletionBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type Definitions.html#/c:PTPVCurrency.h@T@PTPVCurrency">PTPVCurrency</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type Definitions.html#/c:PTPVBlocks.h@T@PTPVEditSubscriptionCompletionBlock">PTPVEditSubscriptionCompletionBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type Definitions.html#/c:PTPVBlocks.h@T@PTPVErrorBlock">PTPVErrorBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type Definitions.html#/c:PTPVBlocks.h@T@PTPVExecutePurchaseCompletionBlock">PTPVExecutePurchaseCompletionBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type Definitions.html#/c:PTPVBlocks.h@T@PTPVExecutePurchaseDCCCompletionBlock">PTPVExecutePurchaseDCCCompletionBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type Definitions.html#/c:PTPVBlocks.h@T@PTPVExecuteRefundCompletionBlock">PTPVExecuteRefundCompletionBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type Definitions.html#/c:PTPVBlocks.h@T@PTPVInfoUserCompletionBlock">PTPVInfoUserCompletionBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type Definitions.html#/c:PTPVBlocks.h@T@PTPVRemoveSubscriptionCompletionBlock">PTPVRemoveSubscriptionCompletionBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type Definitions.html#/c:PTPVBlocks.h@T@PTPVRemoveUserCompletionBlock">PTPVRemoveUserCompletionBlock</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>PTPVConfiguration</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="k">@interface</span> <span class="nc">PTPVConfiguration</span> <span class="p">:</span> <span class="nc">NSObject</span> <span class="o">&lt;</span><span class="n">NSCopying</span><span class="p">,</span> <span class="n"><a href="../Protocols/PTPVNSDictionaryEncodable.html">PTPVNSDictionaryEncodable</a></span><span class="o">&gt;</span></code></pre>
+
+                </div>
+              </div>
+            <p>Represents the configuration of the contracted product.</p>
+
+<p>You provide a PTPVConfiguration instance to the PTPVAPIClient which will use it when making api calls to PAYTPV.</p>
+
+<p>In order to use the PAYTPV payment gateway in your business, you must have the necessary configuration parameters. These can be obtained through the PAYTPV customer management platform at <a href="https://secure.paytpv.com/cp_control/">https://secure.paytpv.com/cp_control/</a></p>
+
+<p>Once inside the platform, the configuration of the contracted product can be reviewed through the menu My products -&gt; Configure product.</p>
+
+<p>After clicking the <q>Edit</q> button of the chosen product, a screen will appear with the basic information of the product under the section <q>Technical configuration of the WEB POS</q>. Specifically, the information required during the integration process is:</p>
+
+<p>Password</p>
+
+<p>Terminal number</p>
+
+<p>Customer code</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PTPVConfiguration(cm)sharedConfiguration"></a>
+                    <a name="//apple_ref/objc/Method/+sharedConfiguration" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PTPVConfiguration(cm)sharedConfiguration">+sharedConfiguration</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A shared singleton configuration</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">+</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">instancetype</span><span class="p">)</span><span class="n">sharedConfiguration</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">shared</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PTPVConfiguration(im)initWithMerchantCode:terminal:password:jetId:"></a>
+                    <a name="//apple_ref/objc/Method/-initWithMerchantCode:terminal:password:jetId:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PTPVConfiguration(im)initWithMerchantCode:terminal:password:jetId:">-initWithMerchantCode:terminal:password:jetId:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a PTPVConfiguration</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">instancetype</span><span class="p">)</span><span class="nf">initWithMerchantCode</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">merchantCode</span>
+                                    <span class="nf">terminal</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">terminal</span>
+                                    <span class="nf">password</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">password</span>
+                                       <span class="nf">jetId</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">jetId</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="nf">init</span><span class="p">(</span><span class="nv">merchantCode</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">terminal</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">password</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">jetId</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>merchantCode</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Customer code</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>terminal</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Terminal number</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>password</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Password</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>jetId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Identifier for JET encryption</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A PTPVConfiguration instance populated with the provided values</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PTPVConfiguration(py)merchantCode"></a>
+                    <a name="//apple_ref/objc/Property/merchantCode" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PTPVConfiguration(py)merchantCode">merchantCode</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Customer code</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">copy</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">merchantCode</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">merchantCode</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PTPVConfiguration(py)terminal"></a>
+                    <a name="//apple_ref/objc/Property/terminal" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PTPVConfiguration(py)terminal">terminal</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Terminal number</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">copy</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">terminal</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">terminal</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PTPVConfiguration(py)password"></a>
+                    <a name="//apple_ref/objc/Property/password" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PTPVConfiguration(py)password">password</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Password</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">copy</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">password</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">password</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PTPVConfiguration(py)jetId"></a>
+                    <a name="//apple_ref/objc/Property/jetId" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PTPVConfiguration(py)jetId">jetId</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Identifier for JET encryption</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">copy</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">jetId</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">jetId</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2017 <a class="link" href="https://www.paytpv.com/" target="_blank" rel="external">PAYTPV</a>. All rights reserved. (Last updated: 2017-10-09)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.8.3</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
